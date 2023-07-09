@@ -1,25 +1,24 @@
 # data_raw come from from: (https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page https://www1.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf)
-#data are too big to run fast experiments. Let's 'sample' them, deleting some of the least represented zones (PULocationID+DOLocationID) (one-hot-encoding will generate less variables)
+#data are too big to run fast experiments. Let's 'sample' them, deleting some of the least represented zones 
+# (PULocationID+DOLocationID) (one-hot-encoding will generate less variables)
 
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 from pickle import dump
-
+import os
 from sqlalchemy import desc
-
+from pathlib import Path
 
 #for a not too aggressive cut, set pu_do_ts = 10, frac = 1
 pu_do_ts = 10 # min freq of pu_do to keep. The higher, the smaller the final dataset
 frac = 1 #random select frac % of rows
 
-year_months = ['2022-01', '2022-02', '2022-03', '2022-04']
-raw_data_path = './data_raw/green_tripdata_'
+raw_data_path = Path('./data_raw/')
+path_save = Path('./')
 
-path_save='./green_tripdata_' #local path where to save objects to log as artifacts
-
-for year_month in year_months:
-    print('############## year ',year_month,'#######################')
-    df = pd.read_parquet(raw_data_path+year_month+'.parquet')
+parquet_files = [filename for filename in os.listdir(raw_data_path) if '.parquet' in filename]
+for filename in parquet_files:
+    df = pd.read_parquet(raw_data_path / filename)
     print('df.shape \n',df.shape)
     categorical = ['PULocationID', 'DOLocationID']
     df[categorical] = df[categorical].astype(str)
@@ -43,4 +42,4 @@ for year_month in year_months:
     df_filtered = df_filtered.sample(frac = frac)
     print('shape after subsample',df_filtered.shape)
     #save results
-    df_filtered.to_parquet(path_save+year_month+'.parquet')
+    df_filtered.to_parquet(path_save / filename)

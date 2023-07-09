@@ -1,10 +1,8 @@
 # Machine Learning Fundamentals - Data Science Retreat 2023 course
-Repository for the 2023 edition of the Machine Learning Fundamentals course, held quarterly at Berlin's [Data Science Retreat](https://datascienceretreat.com/) bootcamp.
+Repository for the July 2023 edition of the Machine Learning Fundamentals course, held quarterly at the Berlin's bootcamp Data Science Retreat.
 
 ## Contents
-This course introduce to the ML algorithms that are foundational for more advanced applications. We use [Introduction to Statistical Learning with Applications in Python](https://hastie.su.domains/ISLP/ISLP_website.pdf) as a textbook reference. 
-
-The course runs for three days. Despite having a flexible agenda depending on the specific class needs, we usually try to cover the following topics:
+This course introduce to the basic ML algorithms that are foundational for more advanced applications. The course is developed over the course of three days. Despite having a flexible agenda depending on the specific class needs, I usually try to cover the following topics with this timing:
 
 * Day 1: the basic problems of Machine Learning
   * Introduction to Supervised Learning
@@ -15,33 +13,59 @@ The course runs for three days. Despite having a flexible agenda depending on th
   * Optimization Methods
   * Metrics for Classification
 
-* Day 2: a focus on the most important ML Algorithims for classification
+* Day 2: a focus on the most important ML Algorithms for classification
   * Logistic Regression
   * Decision Tree
   * Random Forest
   * Gradient Boosting
-  * Support Vector Machines
 
 * Day 3: Unsupervised Learning and additional topics
+  * Support Vector Machines
   * Elements of Unsupervised Learning
   * Principal Component Analysis
   * Cluster Analysis: K-Means
   * Additional topics depending on the class.
 
+Day 3 can vary quite a lot depending on the class. Often here I complete some topics from the previous days, and/or answer to specific questions from students that we didn't have the time to delve into earlier. 
 
-The course is meant to provide clear intuitions about the most important concepts in ML. We prepared a few notebooks that will be used to experiment with the ML models especially to get a better idea of how hyperparameters affect the results. Please note that these notebooks are currently (July 2023) still a work in progress and we will expand them during 2023. 
+The course is meant to provide clear intuitions about the most important concepts in ML. For this reason, we won't focus on applications but more on ideas. Despite that, I prepared a few notebooks that will be used to experiment with the ML models especially to get a better idea of how hyperparameters affect the results. Please note that these notebooks are currently (January 2023) still a working in progress and I will work on them and expand them during 2023. 
 
 ## Teaching Style
-I will mainly use a whiteboard (either a physical one, or with an iPad) discussing concepts and sketching notes on the fly. The idea is to have a discussion on the course topics and to involve every student as much as possible. 
+I will mainly use a whiteboard (either a physical one, or with an iPad) discussing concepts and sketching notes on the fly. There aren't already prepared slides for this course. The idea is to have a discussion on the course topics and to involve every student as much as possible. 
 
 I will present theoretical concepts in an accessible, light-math way, trying to put everything in a broader context. Practical sessions will happen during the course and students will be invited to complete some code snippets and to experiment with the already provided code. 
 
-For the practical sessions, we'll make use MLFlow (https://mlflow.org/), a very important and popular tool used for MLOps that will come in handy to check the experiment results (*experiments tracking*).
+For the practical sessions, we'll make use MLFlow (https://mlflow.org/), a very important and popular tool used for MLOps and that will come in handy to check the experiment results (*experiments tracking*).
 
 ## Set-up for practical sessions
-Use the `requirement.txt` file to install the needed dependencies. 
 
-For the applications, the NY taxi trip data are used. Go to https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page and manually download "Green Taxi Trip Records (PARQUET)" under `data/input/data_raw`. Do it for the month of January 2022. These are quite big datasets so do the following to reduce the data size:
+First be sure to clone this repository:
+
+`git clone https://github.com/andandandand/DSR_ML_Fundamentals_2023.git`
+
+Please use [micromamba]() to set up the virtual environment. Open a terminal and follow its installation instructions [here](https://mamba.readthedocs.io/en/latest/installation.html). 
+
+In MacOS, `brew install micromamba` is an easy path of setup.  
+
+Move to the folder where the repository has been cloned 
+
+```cd DSR_ML_Fundamentals_2023``
+
+and create a virtual environment with the name `ml_env` using the following command 
+
+```micromamba create -y -p ./ml_env -c conda-forge python=3.8```
+
+Then activate the environment
+
+```micromamba activate ./ml_env```
+
+We will use the `requirements.txt` file to install the needed dependencies. 
+
+```micromamba install -y -c conda-forge --file requirements.txt``` 
+
+### Downloading the data
+
+For the applications, the NY taxi trip data are used. Go to https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page and manually download "Green Taxi Trip Records (PARQUET)" under `data/input/data_raw`. Do it for the month of January 2022 [(link)](https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2022-01.parquet). These are quite big datasets so do the following to reduce the data size:
 
 - `cd data/input/`
 - `python get_final_data.py` 
