@@ -1,8 +1,10 @@
 # Machine Learning Fundamentals - Data Science Retreat 2023 course
-Repository for the 2023 edition of the Machine Learning Fundamentals course, held quarterly at the Berlin's bootcamp Data Science Retreat.
+Repository for the 2023 edition of the Machine Learning Fundamentals course, held quarterly at Berlin's  Data Science Retreat bootcamp.
 
 ## Contents
-This course introduce to the basic ML algorithms that are foundational for more advanced applications. The course is run for three days. Despite having a flexible agenda depending on the specific class needs, we usually try to cover the following topics with this timing:
+This course introduce to the ML algorithms that are foundational for more advanced applications. We use [Introduction to Statistical Learning with Applications in Python](https://hastie.su.domains/ISLP/ISLP_website.pdf) as a textbook reference. 
+
+The course runs for three days. Despite having a flexible agenda depending on the specific class needs, we usually try to cover the following topics:
 
 * Day 1: the basic problems of Machine Learning
   * Introduction to Supervised Learning
