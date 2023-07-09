@@ -45,11 +45,11 @@ First be sure to clone this repository:
 
 Please use [micromamba]() to set up the virtual environment. Open a terminal and follow its installation instructions [here](https://mamba.readthedocs.io/en/latest/installation.html). 
 
-In MacOS, `brew install micromamba` is an easy path of setup.  
+In MacOS, `brew install micromamba` is an easy wat to set it up.  
 
 Move to the folder where the repository has been cloned 
 
-```cd DSR_ML_Fundamentals_2023``
+```cd DSR_ML_Fundamentals_2023```
 
 and create a virtual environment with the name `ml_env` using the following command 
 
