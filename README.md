@@ -1,8 +1,8 @@
 # Machine Learning Fundamentals - Data Science Retreat 2023 course
-Repository for the 2023 edition of my Machine Learning Fundamentals course, held quarterly at the Berlin's bootcamp Data Science Retreat.
+Repository for the 2023 edition of the Machine Learning Fundamentals course, held quarterly at the Berlin's bootcamp Data Science Retreat.
 
 ## Contents
-This course introduce to the basic ML algorithms that are foundational for more advanced applications. The course is developed over the course of three days. Despite having a flexible agenda depending on the specific class needs, I usually try to cover the following topics with this timing:
+This course introduce to the basic ML algorithms that are foundational for more advanced applications. The course is run for three days. Despite having a flexible agenda depending on the specific class needs, we usually try to cover the following topics with this timing:
 
 * Day 1: the basic problems of Machine Learning
   * Introduction to Supervised Learning
@@ -18,24 +18,23 @@ This course introduce to the basic ML algorithms that are foundational for more 
   * Decision Tree
   * Random Forest
   * Gradient Boosting
+  * Support Vector Machines
 
 * Day 3: Unsupervised Learning and additional topics
-  * Support Vector Machines
   * Elements of Unsupervised Learning
   * Principal Component Analysis
   * Cluster Analysis: K-Means
   * Additional topics depending on the class.
 
-Day 3 can vary quite a lot depending on the class. Often here I complete some topics from the previous days, and/or answer to specific questions from students that we didn't have the time to delve into earlier. 
 
-The course is meant to provide clear intuitions about the most important concepts in ML. For this reason, we won't focus on applications but more on ideas. Despite that, I prepared a few notebooks that will be used to experiment with the ML models especially to get a better idea of how hyperparameters affect the results. Please note that these notebooks are currently (January 2023) still a working in progress and I will work on them and expand them during 2023. 
+The course is meant to provide clear intuitions about the most important concepts in ML. For this reason, we won't focus on applications but more on ideas. Despite that, we prepared a few notebooks that will be used to experiment with the ML models especially to get a better idea of how hyperparameters affect the results. Please note that these notebooks are currently (July 2023) still a working in progress and we will work on them and expand them during 2023. 
 
 ## Teaching Style
-I will mainly use a whiteboard (either a physical one, or with an iPad) discussing concepts and sketching notes on the fly. There aren't already prepared slides for this course. The idea is to have a discussion on the course topics and to involve every student as much as possible. 
+I will mainly use a whiteboard (either a physical one, or with an iPad) discussing concepts and sketching notes on the fly. The idea is to have a discussion on the course topics and to involve every student as much as possible. 
 
 I will present theoretical concepts in an accessible, light-math way, trying to put everything in a broader context. Practical sessions will happen during the course and students will be invited to complete some code snippets and to experiment with the already provided code. 
 
-For the practical sessions, we'll make use MLFlow (https://mlflow.org/), a very important and popular tool used for MLOps and that will come in handy to check the experiment results (*experiments tracking*).
+For the practical sessions, we'll make use MLFlow (https://mlflow.org/), a very important and popular tool used for MLOps that will come in handy to check the experiment results (*experiments tracking*).
 
 ## Set-up for practical sessions
 Use the `requirement.txt` file to install the needed dependencies. 
