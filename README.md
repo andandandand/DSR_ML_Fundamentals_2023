@@ -43,6 +43,8 @@ First, be sure to clone this repository:
 
 `git clone https://github.com/andandandand/DSR_ML_Fundamentals_2023.git`
 
+We highly recommend using [VSCode](https://code.visualstudio.com/download) as the Integrated Development Environment to explore this codebase. The notebooks use files such as `Training.py`, `Preprocessing.py`, and `BinaryClasificationTraining.py` that we can explore easily with this tool. 
+
 Please use [micromamba](https://mamba.readthedocs.io/en/latest/micromamba.html) to set up the virtual environment. Open a terminal and follow the installation instructions [here](https://mamba.readthedocs.io/en/latest/installation.html). 
 
 On MacOS, `brew install micromamba` is an easy way to set it up.  

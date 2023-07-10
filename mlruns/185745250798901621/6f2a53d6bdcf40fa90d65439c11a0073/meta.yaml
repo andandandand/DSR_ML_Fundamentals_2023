@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/antonio/Documents/DSRCode/July_DSR_ML_Fundamentals_2023/mlruns/185745250798901621/6f2a53d6bdcf40fa90d65439c11a0073/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '185745250798901621'
+lifecycle_stage: active
+run_id: 6f2a53d6bdcf40fa90d65439c11a0073
+run_name: defiant-donkey-861
+run_uuid: 6f2a53d6bdcf40fa90d65439c11a0073
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688901756023
+status: 1
+tags: []
+user_id: antonio

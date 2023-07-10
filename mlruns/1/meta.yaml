@@ -1,0 +1,4 @@
+artifact_location: file:///Users/antonio/Documents/DSRCode/DSR_ML_Fundamentals_2023/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: My Experiment

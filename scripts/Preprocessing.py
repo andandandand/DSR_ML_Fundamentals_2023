@@ -7,20 +7,24 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import xgboost as xgb
 import matplotlib.pyplot as plt
-from pickle import dump
 import numpy as np
 import mlflow
 from mlflow.tracking import MlflowClient
 
 from hyperopt import fmin, tpe, STATUS_OK, Trials, space_eval
 from hyperopt.pyll import scope
-from functools import partial
 
 import sklearn
 
 #import hyperparameter configs
 from scripts.config import *
 
+#q: What is OneHotEncoder?  
+#a: OneHotEncoder is used to encode categorical features as a one-hot numeric array.
+#q: What is StandardScaler?
+#a: StandardScaler standardizes features by removing the mean and scaling to unit variance
+#q: What is xgb?
+#a: XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. 
 
 class Preprocessing:
 

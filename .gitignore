@@ -2,4 +2,12 @@ ml_env
 dsr_env
 data/.DS_Store
 data/input/.DS_Store
+scratchpad.ipynb
 .DS_Store
+ mlruns/
+outputs/
+scripts/__pycache__/
+mlflow.db
+mlflow_datacamp.ipynb
+mllflow_quickstart.ipynb
+local_artifacts_tmp/

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/antonio/Documents/DSRCode/July_DSR_ML_Fundamentals_2023/mlruns/136726230497231496/80c59c89d41c4873bfcad4abc4f55dcd/artifacts
+end_time: 1688901753142
+entry_point_name: ''
+experiment_id: '136726230497231496'
+lifecycle_stage: active
+run_id: 80c59c89d41c4873bfcad4abc4f55dcd
+run_name: datacamp
+run_uuid: 80c59c89d41c4873bfcad4abc4f55dcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688901517725
+status: 3
+tags: []
+user_id: antonio
